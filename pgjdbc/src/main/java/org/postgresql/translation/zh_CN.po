@@ -19,18 +19,20 @@ msgstr ""
 
 #: src/main/java/org/postgresql/Driver.java:221
 msgid "Error loading default settings from driverconfig.properties"
-msgstr ""
+msgstr "在读取driverconfig.properties中的默认参数时发生错误"
 
 #: src/main/java/org/postgresql/Driver.java:233
 msgid "Properties for the driver contains a non-string value for the key "
-msgstr ""
+msgstr "驱动的Properties参数中存在包含空字符串的key "
 
 #: src/main/java/org/postgresql/Driver.java:276
 msgid ""
 "Your security policy has prevented the connection from being attempted.  You "
 "probably need to grant the connect java.net.SocketPermission to the database "
 "server host and port that you wish to connect to."
-msgstr ""
+msgstr "您的连接被安全策略阻止。"
+"你可能需要将java.net.SocketPermission连接权限"
+"赋予你希望连接的数据库服务器的host和port。"
 
 #: src/main/java/org/postgresql/Driver.java:282
 #: src/main/java/org/postgresql/Driver.java:414
@@ -45,7 +47,7 @@ msgstr "Connection 尝试逾时。"
 
 #: src/main/java/org/postgresql/Driver.java:435
 msgid "Interrupted while attempting to connect."
-msgstr ""
+msgstr "连接尝试被中断。"
 
 #: src/main/java/org/postgresql/Driver.java:691
 #, java-format
@@ -56,27 +58,27 @@ msgstr "这个 {0} 方法尚未被实作。"
 #: src/main/java/org/postgresql/PGProperty.java:838
 #, java-format
 msgid "{0} parameter value must be an integer but was: {1}"
-msgstr ""
+msgstr "参数{0}的值应该是integer类型，但实际却是：{1}"
 
 #: src/main/java/org/postgresql/copy/CopyManager.java:50
 #, java-format
 msgid "Requested CopyIn but got {0}"
-msgstr ""
+msgstr "请求的是CopyIn，但实际却返回了{0}"
 
 #: src/main/java/org/postgresql/copy/CopyManager.java:61
 #, java-format
 msgid "Requested CopyOut but got {0}"
-msgstr ""
+msgstr "请求的是CopyOut，但实际却返回了{0}"
 
 #: src/main/java/org/postgresql/copy/CopyManager.java:72
 #, java-format
 msgid "Requested CopyDual but got {0}"
-msgstr ""
+msgstr "请求的是CopyDual，但实际却返回了{0}"
 
 #: src/main/java/org/postgresql/copy/PGCopyInputStream.java:51
 #, java-format
 msgid "Copying from database failed: {0}"
-msgstr ""
+msgstr "从数据库中copy时出现失败: {0}"
 
 #: src/main/java/org/postgresql/copy/PGCopyInputStream.java:67
 #: src/main/java/org/postgresql/copy/PGCopyOutputStream.java:95
@@ -86,12 +88,12 @@ msgstr "这个 ResultSet 已经被关闭。"
 
 #: src/main/java/org/postgresql/copy/PGCopyInputStream.java:109
 msgid "Read from copy failed."
-msgstr ""
+msgstr "从copy流中读取失败。"
 
 #: src/main/java/org/postgresql/copy/PGCopyOutputStream.java:72
 #, java-format
 msgid "Cannot write to copy a byte of value {0}"
-msgstr ""
+msgstr "无法向copy流中写入值为{0}的字节"
 
 #: src/main/java/org/postgresql/core/CommandCompleteParser.java:71
 #, fuzzy, java-format
@@ -106,18 +108,18 @@ msgstr "无法以要求的通讯协定 {0} 建立连线。"
 #: src/main/java/org/postgresql/core/Oid.java:128
 #, java-format
 msgid "oid type {0} not known and not a number"
-msgstr ""
+msgstr "未知并且不是数值的oid类型{0}"
 
 #: src/main/java/org/postgresql/core/OptimizedUTF8Encoder.java:102
 #: src/main/java/org/postgresql/core/OptimizedUTF8Encoder.java:129
 #, java-format
 msgid "Illegal UTF-8 sequence: initial byte is {0}: {1}"
-msgstr ""
+msgstr "非法的UTF-8序列: 初始字节为{0}: {1}"
 
 #: src/main/java/org/postgresql/core/OptimizedUTF8Encoder.java:135
 #, java-format
 msgid "Illegal UTF-8 sequence: final value is out of range: {0}"
-msgstr ""
+msgstr "非法的UTF-8序列: 转换后的值超出范围: {0}"
 
 #: src/main/java/org/postgresql/core/OptimizedUTF8Encoder.java:148
 #, java-format
@@ -128,7 +130,7 @@ msgstr ""
 #, java-format
 msgid ""
 "Illegal UTF-8 sequence: byte {0} of {1} byte sequence is not 10xxxxxx: {2}"
-msgstr ""
+msgstr "非法的UTF-8序列: 字节序列{1}中的{0}字节不为10xxxxxx: {2}"
 
 #: src/main/java/org/postgresql/core/OptimizedUTF8Encoder.java:200
 #, java-format
@@ -138,18 +140,19 @@ msgstr ""
 #: src/main/java/org/postgresql/core/PGStream.java:565
 #, java-format
 msgid "Premature end of input stream, expected {0} bytes, but only read {1}."
-msgstr ""
+msgstr "输入流过早结束，期待{0}字节，但实际只有{1}字节。"
 
 #: src/main/java/org/postgresql/core/PGStream.java:606
 #, java-format
 msgid "Expected an EOF from server, got: {0}"
-msgstr ""
+msgstr "期待从服务器接收到EOF，实际接收到: {0}"
 
 #: src/main/java/org/postgresql/core/PGStream.java:666
 #, java-format
 msgid ""
 "Result set exceeded maxResultBuffer limit. Received:  {0}; Current limit: {1}"
 msgstr ""
+"结果集超出了maxResultBuffer的限制。实际接收: {0}; 当前限制: {1}"
 
 #: src/main/java/org/postgresql/core/Parser.java:1069
 #, java-format
@@ -163,12 +166,12 @@ msgstr "传回非预期的查询结果。"
 #: src/main/java/org/postgresql/core/SocketFactoryFactory.java:43
 #, java-format
 msgid "The SocketFactory class provided {0} could not be instantiated."
-msgstr ""
+msgstr "SocketFactory类提供的{0}无法被实例化。"
 
 #: src/main/java/org/postgresql/core/SocketFactoryFactory.java:68
 #, java-format
 msgid "The SSLSocketFactory class provided {0} could not be instantiated."
-msgstr ""
+msgstr "SSLSocketFactory类提供的{0}无法被实例化。"
 
 #: src/main/java/org/postgresql/core/Utils.java:93
 #: src/main/java/org/postgresql/core/Utils.java:110
@@ -178,7 +181,7 @@ msgstr "字符参数不能有 0 个位元组。"
 #: src/main/java/org/postgresql/core/Utils.java:120
 #: src/main/java/org/postgresql/core/Utils.java:170
 msgid "No IOException expected from StringBuffer or StringBuilder"
-msgstr ""
+msgstr "无法从StringBuffer或StringBuilder中得到期待的IOException。"
 
 #: src/main/java/org/postgresql/core/Utils.java:159
 msgid "Zero bytes may not occur in identifiers."
@@ -215,7 +218,7 @@ msgstr "尝试连线已失败。"
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:312
 #, java-format
 msgid "Could not find a server with specified targetServerType: {0}"
-msgstr ""
+msgstr "无法找到targetServerType所指定的服务器: {0}"
 
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:423
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:436
@@ -238,6 +241,7 @@ msgid ""
 "SCRAM authentication is not supported by this driver. You need JDK >= 8 and "
 "pgjdbc >= 42.2.0 (not \".jre\" versions)"
 msgstr ""
+"驱动不支持SCRAM认证。需要JDK >= 8并且pgjdbc >= 42.2.0 (不是\".jre\"的版本)"
 
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:706
 #, java-format
@@ -260,27 +264,27 @@ msgstr "通讯协定错误，Session 初始化失败。"
 
 #: src/main/java/org/postgresql/core/v3/CopyInImpl.java:54
 msgid "CopyIn copy direction can't receive data"
-msgstr ""
+msgstr "CopyIn复制方向无法接收数据"
 
 #: src/main/java/org/postgresql/core/v3/CopyOperationImpl.java:54
 msgid "CommandComplete expected COPY but got: "
-msgstr ""
+msgstr "CommandComplete期待COPY，但实际为: "
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:167
 msgid "Tried to obtain lock while already holding it"
-msgstr ""
+msgstr "尝试获取已持有的锁"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:183
 msgid "Tried to break lock on database connection"
-msgstr ""
+msgstr "尝试破坏数据库连接的锁"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:201
 msgid "Interrupted while waiting to obtain lock on database connection"
-msgstr ""
+msgstr "在等待获取数据库连接锁的过程中被中断"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:333
 msgid "Unable to bind parameter values for statement."
-msgstr ""
+msgstr "无法为statement绑定参数"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:339
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:516
@@ -295,19 +299,19 @@ msgstr "传送数据至后端时发生 I/O 错误。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:391
 msgid "Error releasing savepoint"
-msgstr ""
+msgstr "释放保存点时发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:571
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:614
 #, java-format
 msgid "Expected command status BEGIN, got {0}."
-msgstr ""
+msgstr "期待命令状态BEGIN，实际为 {0}。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:619
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1744
 #, java-format
 msgid "Unexpected command status: {0}."
-msgstr ""
+msgstr "期待外的命令状态: {0}."
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:729
 #, fuzzy
@@ -327,44 +331,44 @@ msgstr "传送数据至后端时发生 I/O 错误。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:885
 msgid "Database connection failed when starting copy"
-msgstr ""
+msgstr "copy操作开始时数据库连接发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:920
 msgid "Tried to cancel an inactive copy operation"
-msgstr ""
+msgstr "尝试取消一个非活动中的copy操作"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:959
 msgid "Database connection failed when canceling copy operation"
-msgstr ""
+msgstr "在取消copy操作时数据库连接发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:975
 msgid "Missing expected error response to copy cancel request"
-msgstr ""
+msgstr "缺少对copy取消请求作出期待的错误响应"  TODO
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:979
 #, java-format
 msgid "Got {0} error responses to single copy cancel request"
-msgstr ""
+msgstr "单个copy取消请求收到{0}个错误响应"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:994
 msgid "Tried to end inactive copy"
-msgstr ""
+msgstr "尝试结束非活动中的copy操作"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1009
 msgid "Database connection failed when ending copy"
-msgstr ""
+msgstr "在结束copy操作时数据库连接发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1027
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1054
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1073
 msgid "Tried to write to an inactive copy operation"
-msgstr ""
+msgstr "尝试写入数据到一个非活动中的copy操作"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1038
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1066
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1080
 msgid "Database connection failed when writing to copy"
-msgstr ""
+msgstr "在写入数据到copy操作时数据库连接发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1095
 msgid "Tried to read from inactive copy"
