@@ -331,52 +331,52 @@ msgstr "传送数据至后端时发生 I/O 错误。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:885
 msgid "Database connection failed when starting copy"
-msgstr "copy操作开始时数据库连接发生错误"
+msgstr "在开始拷贝操作时数据库连接发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:920
 msgid "Tried to cancel an inactive copy operation"
-msgstr "尝试取消一个非活动中的copy操作"
+msgstr "尝试取消一个非活动的拷贝操作"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:959
 msgid "Database connection failed when canceling copy operation"
-msgstr "在取消copy操作时数据库连接发生错误"
+msgstr "在取消拷贝操作时数据库连接发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:975
 msgid "Missing expected error response to copy cancel request"
-msgstr "缺少对copy取消请求作出期待的错误响应"  TODO
+msgstr "缺少对拷贝取消请求作出期待的错误响应"  TODO
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:979
 #, java-format
 msgid "Got {0} error responses to single copy cancel request"
-msgstr "单个copy取消请求收到{0}个错误响应"
+msgstr "单个拷贝取消请求收到了{0}个错误响应"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:994
 msgid "Tried to end inactive copy"
-msgstr "尝试结束非活动中的copy操作"
+msgstr "尝试结束非活动中的拷贝流"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1009
 msgid "Database connection failed when ending copy"
-msgstr "在结束copy操作时数据库连接发生错误"
+msgstr "在结束拷贝时数据库连接发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1027
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1054
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1073
 msgid "Tried to write to an inactive copy operation"
-msgstr "尝试写入数据到一个非活动中的copy操作"
+msgstr "尝试写入数据到一个非活动的拷贝流"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1038
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1066
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1080
 msgid "Database connection failed when writing to copy"
-msgstr "在写入数据到copy操作时数据库连接发生错误"
+msgstr "在写入数据到拷贝流时，数据库连接发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1095
 msgid "Tried to read from inactive copy"
-msgstr ""
+msgstr "尝试从非活动的拷贝流中读取数据"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1102
 msgid "Database connection failed when reading from copy"
-msgstr ""
+msgstr "在从拷贝流中读取数据时，数据库连接发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1126
 #, fuzzy
