@@ -391,21 +391,21 @@ msgstr ""
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1212
 #, java-format
 msgid "Got CopyInResponse from server during an active {0}"
-msgstr ""
+msgstr "在{0}活动期间从服务器接收到CopyInResponse"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1226
 #, java-format
 msgid "Got CopyOutResponse from server during an active {0}"
-msgstr ""
+msgstr "在{0}活动期间从服务器接收到CopyOutResponse"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1240
 #, java-format
 msgid "Got CopyBothResponse from server during an active {0}"
-msgstr ""
+msgstr "在{0}活动期间从服务器接收到CopyBothResponse"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1259
 msgid "Got CopyData without an active copy operation"
-msgstr ""
+msgstr "在没有活动的拷贝流的情况下获取CopyData"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1263
 #, java-format
@@ -422,15 +422,16 @@ msgstr ""
 msgid ""
 "Bind message length {0} too long.  This can be caused by very large or "
 "incorrect length specifications on InputStream parameters."
-msgstr ""
+msgstr "绑定消息长度{0}过长。"
+"这可能是由于InputStream的参数定义过大或定义不正确导致"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:2240
 msgid "Ran out of memory retrieving query results."
-msgstr ""
+msgstr "获取查询结果时出现内存不足"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:2402
 msgid "COPY commands are only supported using the CopyManager API."
-msgstr ""
+msgstr "COPY命令只支持在CopyManager接口上使用。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:2695
 #, fuzzy, java-format
@@ -472,7 +473,7 @@ msgstr "参数索引超出许可范围：{0}，参数总数：{1}。"
 #: src/main/java/org/postgresql/core/v3/replication/V3PGReplicationStream.java:147
 #, java-format
 msgid "Unexpected packet type during replication: {0}"
-msgstr ""
+msgstr "流复制过程中出现期待外的包类型: {0}"
 
 #: src/main/java/org/postgresql/core/v3/replication/V3PGReplicationStream.java:272
 #, fuzzy
@@ -501,7 +502,7 @@ msgstr "Sstatement 已经被关闭。"
 
 #: src/main/java/org/postgresql/ds/PGPoolingDataSource.java:269
 msgid "Failed to setup DataSource."
-msgstr ""
+msgstr "DataSource配置失败"
 
 #: src/main/java/org/postgresql/ds/PGPoolingDataSource.java:371
 msgid "DataSource has been closed."
@@ -567,7 +568,7 @@ msgstr "无法得知 path 是开启或关闭：{0}。"
 #: src/main/java/org/postgresql/gss/MakeGSS.java:65
 #: src/main/java/org/postgresql/gss/MakeGSS.java:73
 msgid "GSS Authentication failed"
-msgstr ""
+msgstr "GSS认证失败"
 
 #: src/main/java/org/postgresql/jdbc/AbstractBlobClob.java:77
 msgid ""
@@ -576,7 +577,7 @@ msgstr "大型对象的截断(Truncation)仅被实作执行在 8.3 和后来的�
 
 #: src/main/java/org/postgresql/jdbc/AbstractBlobClob.java:82
 msgid "Cannot truncate LOB to a negative length."
-msgstr ""
+msgstr "无法将LOB的长度缩短为负值。"
 
 #: src/main/java/org/postgresql/jdbc/AbstractBlobClob.java:89
 #: src/main/java/org/postgresql/jdbc/AbstractBlobClob.java:231
@@ -586,11 +587,11 @@ msgstr "PostgreSQL LOBs 仅能索引到：{0}"
 
 #: src/main/java/org/postgresql/jdbc/AbstractBlobClob.java:227
 msgid "LOB positioning offsets start at 1."
-msgstr ""
+msgstr "LOB的位置偏移从1开始。"
 
 #: src/main/java/org/postgresql/jdbc/AbstractBlobClob.java:243
 msgid "free() was called on this LOB previously"
-msgstr ""
+msgstr "free()在LOB上已经被调用过"
 
 #: src/main/java/org/postgresql/jdbc/BatchResultHandler.java:95
 msgid "Too many update results were returned."
