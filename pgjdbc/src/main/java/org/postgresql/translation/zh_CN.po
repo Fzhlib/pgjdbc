@@ -608,7 +608,7 @@ msgstr "批次处理 {0} {1} 被中止，呼叫 getNextException 以取得原因
 #: src/main/java/org/postgresql/jdbc/BooleanTypeUtil.java:99
 #, java-format
 msgid "Cannot cast to boolean: \"{0}\""
-msgstr ""
+msgstr "无法强制转换为:\"{0}\""
 
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:238
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions2.java:168
@@ -745,7 +745,7 @@ msgstr "这个 statement 未宣告 OUT 参数，使用 '{' ?= call ... '}' 宣�
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:229
 msgid "wasNull cannot be call before fetching a result."
-msgstr ""
+msgstr "wasNull无法在结果取得前被调用。"
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:367
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:386
@@ -765,12 +765,12 @@ msgstr ""
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:413
 msgid "No function outputs were registered."
-msgstr ""
+msgstr "函数返回未注册。"
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:419
 msgid ""
 "Results cannot be retrieved from a CallableStatement before it is executed."
-msgstr ""
+msgstr "在CallableStatement执行之前无法获取结果"
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:686
 #, fuzzy, java-format
@@ -804,7 +804,7 @@ msgstr "传回预期之外的结果。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:604
 msgid "Custom type maps are not supported."
-msgstr ""
+msgstr "不支持自定义的Map类型"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:646
 #, java-format
@@ -814,7 +814,7 @@ msgstr "为 {0} 建立对象失败。"
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:700
 #, java-format
 msgid "Unable to load the class {0} responsible for the datatype {1}"
-msgstr ""
+msgstr "无法为数据类型{1}加载类{0}"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:761
 msgid ""
@@ -823,7 +823,7 @@ msgstr "不能在事物交易过程中改变事物交易唯读属性。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:846
 msgid "Cannot commit when autoCommit is enabled."
-msgstr ""
+msgstr "无法在autoCommit有效时显式的提交事务。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:857
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1485
@@ -834,7 +834,7 @@ msgstr "Connection 已经被关闭。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:867
 msgid "Cannot rollback when autoCommit is enabled."
-msgstr ""
+msgstr "无法在autoCommit有效时显式的回滚事务。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:920
 msgid ""
@@ -848,7 +848,7 @@ msgstr "不支援交易隔绝等级 {0} 。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:975
 msgid "Finalizing a Connection that was never closed:"
-msgstr ""
+msgstr "正在结束一个未关闭的连接:"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1042
 msgid "Unable to translate data into the desired encoding."
@@ -864,7 +864,7 @@ msgstr "数据读取笔数(fetch size)必须大于或等于 0。"
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1425
 #, java-format
 msgid "Unable to find server array type for provided name {0}."
-msgstr ""
+msgstr "找不到{0}对应的的数据库数组类型。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1407
 #, fuzzy, java-format
@@ -878,7 +878,7 @@ msgstr "无效的串流长度 {0}."
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1473
 msgid "Validating connection."
-msgstr ""
+msgstr "正在验证连接。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1506
 #, fuzzy, java-format
@@ -887,11 +887,11 @@ msgstr "为 {0} 建立对象失败。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1516
 msgid "ClientInfo property not supported."
-msgstr ""
+msgstr "不支持ClientInfo属性。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1542
 msgid "One or more ClientInfo failed."
-msgstr ""
+msgstr "一个或一个以上的ClientInfo发生错误。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1642
 #, fuzzy
@@ -900,11 +900,11 @@ msgstr "查询逾时等候时间必须大于或等于 0。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1654
 msgid "Unable to set network timeout."
-msgstr ""
+msgstr "无法设置网络超时时间。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1665
 msgid "Unable to get network timeout."
-msgstr ""
+msgstr "无法获取网络超时时间。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1682
 #, java-format
@@ -924,7 +924,7 @@ msgstr ""
 msgid ""
 "Unable to determine a value for MaxIndexKeys due to missing system catalog "
 "data."
-msgstr ""
+msgstr "无法在缺少系统catalog的情况下确定MaxIndexKeys的值"
 
 #: src/main/java/org/postgresql/jdbc/PgDatabaseMetaData.java:88
 msgid "Unable to find name datatype in the system catalogs."
@@ -1023,7 +1023,7 @@ msgstr "不明的类型 {0}"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:480
 msgid "No hstore extension installed."
-msgstr ""
+msgstr "hstore扩展尚未安装。"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:622
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:645
@@ -1048,8 +1048,8 @@ msgstr "无法转换 {0} 到类型 {1} 的实例"
 msgid ""
 "Can''t infer the SQL type to use for an instance of {0}. Use setObject() "
 "with an explicit Types value to specify the type to use."
-msgstr ""
-
+msgstr "无法推测用于{0}实例的SQL类型。使用带有显式类型值的setObject()指定"
+"要使用的类型。"
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:1132
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:1233
 msgid "Unexpected error writing large object to database."
@@ -1063,7 +1063,7 @@ msgstr "提供的 Reader 已失败。"
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:1456
 #: src/main/java/org/postgresql/util/StreamWrapper.java:56
 msgid "Object is too large to send over the protocol."
-msgstr ""
+msgstr "传送对象过大，无法通过协议发送。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:273
 msgid ""
@@ -1125,7 +1125,7 @@ msgstr "不在新增的数据列上。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:976
 msgid "You must specify at least one column value to insert a row."
-msgstr ""
+msgstr "必须为行插入操作指定至少一列数据。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1121
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1718
@@ -1237,12 +1237,12 @@ msgstr "无效的旗标"
 
 #: src/main/java/org/postgresql/jdbc/PgSQLXML.java:151
 msgid "Unable to decode xml data."
-msgstr ""
+msgstr "无法解码xml数据。"
 
 #: src/main/java/org/postgresql/jdbc/PgSQLXML.java:154
 #, java-format
 msgid "Unknown XML Source class: {0}"
-msgstr ""
+msgstr "未知XML源类{0}"
 
 #: src/main/java/org/postgresql/jdbc/PgSQLXML.java:202
 #, fuzzy
@@ -1251,7 +1251,7 @@ msgstr "为 {0} 建立对象失败。"
 
 #: src/main/java/org/postgresql/jdbc/PgSQLXML.java:217
 msgid "Unable to create StAXResult for SQLXML"
-msgstr ""
+msgstr "无法为SQLXML创建StAXResult"
 
 #: src/main/java/org/postgresql/jdbc/PgSQLXML.java:222
 #, fuzzy, java-format
@@ -1267,22 +1267,22 @@ msgstr "这个 PooledConnection 已经被关闭。"
 msgid ""
 "This SQLXML object has not been initialized, so you cannot retrieve data "
 "from it."
-msgstr ""
+msgstr "该SQLXML对象尚未初始化，无法从中检索数据。"
 
 #: src/main/java/org/postgresql/jdbc/PgSQLXML.java:257
 #, java-format
 msgid "Failed to convert binary xml data to encoding: {0}."
-msgstr ""
+msgstr "无法将二进制xml编码数据转换为:{0}"
 
 #: src/main/java/org/postgresql/jdbc/PgSQLXML.java:283
 msgid "Unable to convert DOMResult SQLXML data to a string."
-msgstr ""
+msgstr "无法将DOMResult SQLXML数据转换为字符串。"
 
 #: src/main/java/org/postgresql/jdbc/PgSQLXML.java:296
 msgid ""
 "This SQLXML object has already been initialized, so you cannot manipulate it "
 "further."
-msgstr ""
+msgstr "该SQLXML对象已经被初始化，无法再执行初始化操作。"
 
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:237
 msgid "Multiple ResultSets were returned by the query."
@@ -1290,7 +1290,7 @@ msgstr "查询传回多个 ResultSet。"
 
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:319
 msgid "Can''t use executeWithFlags(int) on a Statement."
-msgstr ""
+msgstr "无法在Statement对象使用executeWithFlags(int)函数"
 
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:518
 msgid "Maximum number of rows must be a value grater than or equal to 0."
@@ -1312,7 +1312,7 @@ msgstr "这个 statement 已经被关闭。"
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:1208
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:1236
 msgid "Returning autogenerated keys by column index is not supported."
-msgstr ""
+msgstr "不支持按列索引返回自动生成的键。"
 
 #: src/main/java/org/postgresql/jdbc/SslMode.java:78
 #, fuzzy, java-format
@@ -1358,11 +1358,11 @@ msgstr "无效的串流长度 {0}."
 #: src/main/java/org/postgresql/jre7/sasl/ScramAuthenticator.java:163
 #, java-format
 msgid "SCRAM authentication failed, server returned error: {0}"
-msgstr ""
+msgstr "SCRAM认证失败，服务器返回错误: {0}"
 
 #: src/main/java/org/postgresql/jre7/sasl/ScramAuthenticator.java:170
 msgid "Invalid server SCRAM signature"
-msgstr ""
+msgstr "无效的服务器SCRAM签名"
 
 #: src/main/java/org/postgresql/largeobject/LargeObjectManager.java:249
 #: src/main/java/org/postgresql/largeobject/LargeObjectManager.java:290
@@ -1376,7 +1376,7 @@ msgstr "未被支持的类型值：{0}"
 
 #: src/main/java/org/postgresql/replication/fluent/AbstractCreateSlotBuilder.java:38
 msgid "Server does not support temporary replication slots"
-msgstr ""
+msgstr "服务器不支持临时的流复制槽"
 
 #: src/main/java/org/postgresql/replication/fluent/logical/LogicalCreateSlotBuilder.java:63
 #: src/main/java/org/postgresql/replication/fluent/physical/PhysicalCreateSlotBuilder.java:49
@@ -1403,95 +1403,96 @@ msgstr ""
 msgid ""
 "Could not find a java cryptographic algorithm: X.509 CertificateFactory not "
 "available."
-msgstr ""
+msgstr "找不到java加密算法: X.509"
+"CertificateFactory不可用。"
 
 #: src/main/java/org/postgresql/ssl/LazyKeyManager.java:142
 #, java-format
 msgid "Could not open SSL certificate file {0}."
-msgstr ""
+msgstr "无法打开SSL证书文件 {0}。"
 
 #: src/main/java/org/postgresql/ssl/LazyKeyManager.java:147
 #, java-format
 msgid "Loading the SSL certificate {0} into a KeyManager failed."
-msgstr ""
+msgstr "无法将SSL证书 {0} 加载到KeyManager。"
 
 #: src/main/java/org/postgresql/ssl/LazyKeyManager.java:211
 #: src/main/java/org/postgresql/ssl/PKCS12KeyManager.java:127
 #: src/main/java/org/postgresql/ssl/PKCS12KeyManager.java:148
 msgid "Enter SSL password: "
-msgstr ""
+msgstr "请输入SSL密码: "
 
 #: src/main/java/org/postgresql/ssl/LazyKeyManager.java:218
 #: src/main/java/org/postgresql/ssl/PKCS12KeyManager.java:155
 msgid "Could not read password for SSL key file, console is not available."
-msgstr ""
+msgstr "无法读取SSL密钥文件，控制台不可用。"
 
 #: src/main/java/org/postgresql/ssl/LazyKeyManager.java:223
 #: src/main/java/org/postgresql/ssl/PKCS12KeyManager.java:160
 #, java-format
 msgid "Could not read password for SSL key file by callbackhandler {0}."
-msgstr ""
+msgstr "无法通过callbackhandler {0} 为SSL密钥文件读取密码"
 
 #: src/main/java/org/postgresql/ssl/LazyKeyManager.java:243
 #, java-format
 msgid "Could not decrypt SSL key file {0}."
-msgstr ""
+msgstr "无法解密SSL密钥文件 {0}。"
 
 #: src/main/java/org/postgresql/ssl/LazyKeyManager.java:250
 #: src/main/java/org/postgresql/ssl/PKCS12KeyManager.java:136
 #, java-format
 msgid "Could not read SSL key file {0}."
-msgstr ""
+msgstr "无法读取SSL密钥文件 {0}。"
 
 #: src/main/java/org/postgresql/ssl/LazyKeyManager.java:253
 #: src/main/java/org/postgresql/ssl/LibPQFactory.java:182
 #, java-format
 msgid "Could not find a java cryptographic algorithm: {0}."
-msgstr ""
+msgstr "找不到java加密算法: {0}。"
 
 #: src/main/java/org/postgresql/ssl/LibPQFactory.java:55
 #, java-format
 msgid "The password callback class provided {0} could not be instantiated."
-msgstr ""
+msgstr "无法实例化提供的密码回调类 {0}。"
 
 #: src/main/java/org/postgresql/ssl/LibPQFactory.java:140
 #, java-format
 msgid "Could not open SSL root certificate file {0}."
-msgstr ""
+msgstr "无法打开SSL根证书文件 {0}。"
 
 #: src/main/java/org/postgresql/ssl/LibPQFactory.java:155
 #, java-format
 msgid "Could not read SSL root certificate file {0}."
-msgstr ""
+msgstr "无法读取SSL根证书文件 {0}。"
 
 #: src/main/java/org/postgresql/ssl/LibPQFactory.java:159
 #, java-format
 msgid "Loading the SSL root certificate {0} into a TrustManager failed."
-msgstr ""
+msgstr "无法将SSL根证书加载到TrustManager中。"
 
 #: src/main/java/org/postgresql/ssl/LibPQFactory.java:176
 msgid "Could not initialize SSL context."
-msgstr ""
+msgstr "无法初始化SSL上下文。"
 
 #: src/main/java/org/postgresql/ssl/MakeSSL.java:43
 #, java-format
 msgid "SSL error: {0}"
-msgstr ""
+msgstr "SSL错误: {0}"
 
 #: src/main/java/org/postgresql/ssl/MakeSSL.java:70
 #, java-format
 msgid "The HostnameVerifier class provided {0} could not be instantiated."
-msgstr ""
+msgstr "无法实例化提供的HostnameVerifier类 {0}。"
 
 #: src/main/java/org/postgresql/ssl/MakeSSL.java:81
 #, java-format
 msgid "The hostname {0} could not be verified by hostnameverifier {1}."
-msgstr ""
+msgstr "主机名 {0} 无法被hostnameverifier {1} 认证。"
 
 #: src/main/java/org/postgresql/ssl/PGjdbcHostnameVerifier.java:85
 #, java-format
 msgid "Unable to parse X509Certificate for hostname {0}"
-msgstr ""
+msgstr "无法为主机 {0} 解析X509Certificate"
 
 #: src/main/java/org/postgresql/ssl/PGjdbcHostnameVerifier.java:90
 #, fuzzy, java-format
@@ -1501,12 +1502,12 @@ msgstr "{0} 数据表中未找到主键(Primary key)。"
 #: src/main/java/org/postgresql/ssl/PGjdbcHostnameVerifier.java:109
 #, java-format
 msgid "Hostname {0} is invalid"
-msgstr ""
+msgstr "主机 {0} 不可用"
 
 #: src/main/java/org/postgresql/ssl/PGjdbcHostnameVerifier.java:126
 #, java-format
 msgid "Unable to parse certificates for hostname {0}"
-msgstr ""
+msgstr "无法为主机 {0} 解析证书"
 
 #: src/main/java/org/postgresql/ssl/PGjdbcHostnameVerifier.java:157
 #, java-format
