@@ -19,7 +19,7 @@ msgstr ""
 
 #: src/main/java/org/postgresql/Driver.java:221
 msgid "Error loading default settings from driverconfig.properties"
-msgstr "读取driverconfig.properties中的默认参数时发生错误"
+msgstr "读取driverconfig.properties中的默认设置时发生错误"
 
 #: src/main/java/org/postgresql/Driver.java:233
 msgid "Properties for the driver contains a non-string value for the key "
@@ -39,11 +39,11 @@ msgstr "您的连接被安全策略阻止。"
 msgid ""
 "Something unusual has occurred to cause the driver to fail. Please report "
 "this exception."
-msgstr "不明的原因导致驱动程序造成失败，请回报这个例外。"
+msgstr "不明的原因导致驱动程序错误，请向我们报告这个错误。"
 
 #: src/main/java/org/postgresql/Driver.java:422
 msgid "Connection attempt timed out."
-msgstr "Connection 尝试逾时。"
+msgstr "连接尝试超时。"
 
 #: src/main/java/org/postgresql/Driver.java:435
 msgid "Interrupted while attempting to connect."
@@ -52,28 +52,28 @@ msgstr "连接尝试被中断。"
 #: src/main/java/org/postgresql/Driver.java:691
 #, java-format
 msgid "Method {0} is not yet implemented."
-msgstr "这个 {0} 方法尚未被实作。"
+msgstr "方法{0}尚未实现。"
 
 #: src/main/java/org/postgresql/PGProperty.java:818
 #: src/main/java/org/postgresql/PGProperty.java:838
 #, java-format
 msgid "{0} parameter value must be an integer but was: {1}"
-msgstr "参数{0}的值应该是integer类型，实际却是: {1}"
+msgstr "属性{0}的值应是integer类型，实际却是: {1}"
 
 #: src/main/java/org/postgresql/copy/CopyManager.java:50
 #, java-format
 msgid "Requested CopyIn but got {0}"
-msgstr "请求的是CopyIn，实际却是: {0}"
+msgstr "向服务端请求的是CopyIn，但实际响应的是: {0}"
 
 #: src/main/java/org/postgresql/copy/CopyManager.java:61
 #, java-format
 msgid "Requested CopyOut but got {0}"
-msgstr "请求的是CopyOut，实际却是: {0}"
+msgstr "向服务端请求的是CopyOut，但实际响应的是: {0}"
 
 #: src/main/java/org/postgresql/copy/CopyManager.java:72
 #, java-format
 msgid "Requested CopyDual but got {0}"
-msgstr "请求的是CopyDual，实际却是: {0}"
+msgstr "向服务端请求的是CopyDual，但实际响应的是: {0}"
 
 #: src/main/java/org/postgresql/copy/PGCopyInputStream.java:51
 #, java-format
@@ -103,7 +103,7 @@ msgstr "无法解析命令完成标签中的数量: {0}。"
 #: src/main/java/org/postgresql/core/ConnectionFactory.java:57
 #, java-format
 msgid "A connection could not be made using the requested protocol {0}."
-msgstr "无法以要求的通讯协定 {0} 建立连线。"
+msgstr "无法以指定的通信协议{0}建立连接"
 
 #: src/main/java/org/postgresql/core/Oid.java:128
 #, java-format
@@ -157,11 +157,11 @@ msgstr ""
 #: src/main/java/org/postgresql/core/Parser.java:1069
 #, java-format
 msgid "Malformed function or procedure escape syntax at offset {0}."
-msgstr "不正确的函式或程序 escape 语法于 {0}。"
+msgstr "不正确的函数或过程转义语法，位于: {0}"
 
 #: src/main/java/org/postgresql/core/SetupQueryRunner.java:64
 msgid "An unexpected result was returned by a query."
-msgstr "传回非预期的查询结果。"
+msgstr "查询返回了非预期的结果。"
 
 #: src/main/java/org/postgresql/core/SocketFactoryFactory.java:43
 #, java-format
@@ -176,7 +176,7 @@ msgstr "提供的SSLSocketFactory类<<{0}>>无法被实例化。"
 #: src/main/java/org/postgresql/core/Utils.java:93
 #: src/main/java/org/postgresql/core/Utils.java:110
 msgid "Zero bytes may not occur in string parameters."
-msgstr "字符参数不能有 0 个位元组。"
+msgstr "字符参数中不应出现零字节。"
 
 #: src/main/java/org/postgresql/core/Utils.java:120
 #: src/main/java/org/postgresql/core/Utils.java:170
@@ -185,7 +185,7 @@ msgstr "不应当有任何IOException从StringBuffer或StringBuilder中抛出"
 
 #: src/main/java/org/postgresql/core/Utils.java:159
 msgid "Zero bytes may not occur in identifiers."
-msgstr "在标识识别符中不存在零位元组。"
+msgstr "标识符中不应出现零字节。"
 
 #: src/main/java/org/postgresql/core/v3/CompositeParameterList.java:34
 #: src/main/java/org/postgresql/core/v3/SimpleParameterList.java:54
@@ -195,7 +195,7 @@ msgstr "在标识识别符中不存在零位元组。"
 #: src/main/java/org/postgresql/jdbc/PgResultSetMetaData.java:393
 #, java-format
 msgid "The column index is out of range: {0}, number of columns: {1}."
-msgstr "栏位索引超过许可范围：{0}，栏位数：{1}。"
+msgstr "列索引超出范围: {0}，列数: {1}。"
 
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:162
 #, fuzzy, java-format
@@ -214,7 +214,7 @@ msgstr ""
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:297
 #: src/main/java/org/postgresql/core/v3/replication/V3ReplicationProtocol.java:135
 msgid "The connection attempt failed."
-msgstr "尝试连线已失败。"
+msgstr "连接尝试失败。"
 
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:312
 #, java-format
@@ -224,11 +224,11 @@ msgstr "无法通过targetServerType找到指定的服务器: {0}"
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:423
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:436
 msgid "The server does not support SSL."
-msgstr "服务器不支援 SSL 连线。"
+msgstr "服务器不支持SSL连接。"
 
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:450
 msgid "An error occurred while setting up the SSL connection."
-msgstr "进行 SSL 连线时发生错误。"
+msgstr "建立SSL连接时发生错误。"
 
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:546
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:573
@@ -242,7 +242,7 @@ msgid ""
 "SCRAM authentication is not supported by this driver. You need JDK >= 8 and "
 "pgjdbc >= 42.2.0 (not \".jre\" versions)"
 msgstr ""
-"驱动不支持SCRAM认证。需要JDK >= 8并且pgjdbc >= 42.2.0 (不是\".jre\"的版本)"
+"驱动不支持SCRAM认证。需要JDK >= 8 并且 pgjdbc >= 42.2.0(不是\".jre\"的版本)"
 
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:706
 #, java-format
@@ -251,8 +251,8 @@ msgid ""
 "the pg_hba.conf file to include the client''s IP address or subnet, and that "
 "it is using an authentication scheme supported by the driver."
 msgstr ""
-"不支援 {0} 验证类型。请核对您已经组态 pg_hba.conf 文件包含客户端的IP位址或网"
-"路区段，以及驱动程序所支援的验证架构模式已被支援。"
+"不支持的{0}认证方式。请确认pg_hba.conf文件已包含客户端的IP地址或网段，"
+"以及使用的是驱动程序所支持的认证方式。"
 
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:713
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:2628
@@ -261,7 +261,7 @@ msgstr ""
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:2738
 #: src/main/java/org/postgresql/gss/GssAction.java:125
 msgid "Protocol error.  Session setup failed."
-msgstr "通讯协定错误，Session 初始化失败。"
+msgstr "通信协议错误。会话建立失败。"
 
 #: src/main/java/org/postgresql/core/v3/CopyInImpl.java:54
 msgid "CopyIn copy direction can't receive data"
