@@ -277,7 +277,7 @@ msgstr "尝试获取已经持有的锁"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:183
 msgid "Tried to break lock on database connection"
-msgstr "尝试在数据库连接上释放锁"
+msgstr "尝试在数据库连接上强制释放锁"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:201
 msgid "Interrupted while waiting to obtain lock on database connection"
@@ -312,23 +312,23 @@ msgstr "期待的CommandStatus是BEGIN，实际却是 {0}。"
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1744
 #, java-format
 msgid "Unexpected command status: {0}."
-msgstr "期待外的CommandStatus: {0}."
+msgstr "预期之外的CommandStatus: {0}。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:729
 #, fuzzy
 msgid "An error occurred while trying to get the socket timeout."
-msgstr "获取套接字超时时间时发生错误。"
+msgstr "尝试获取套接字超时时间时发生错误。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:764
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:840
 #, java-format
 msgid "Unknown Response Type {0}."
-msgstr "不明的回应类型 {0}。"
+msgstr "未知的响应消息类型: {0}。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:787
 #, fuzzy
 msgid "An error occurred while trying to reset the socket timeout."
-msgstr "重置套接字超时时间时发生错误。"
+msgstr "尝试重置套接字超时时间时发生错误。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:885
 msgid "Database connection failed when starting copy"
@@ -344,12 +344,12 @@ msgstr "在取消拷贝操作时数据库连接发生错误"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:975
 msgid "Missing expected error response to copy cancel request"
-msgstr "缺少拷贝取消请求所对应的错误响应"
+msgstr "缺少拷贝取消请求所对应的来自服务端的错误响应"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:979
 #, java-format
 msgid "Got {0} error responses to single copy cancel request"
-msgstr "单个拷贝取消请求收到了{0}个错误响应"
+msgstr "单个拷贝取消请求收到了{0}个来自服务端的错误响应"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:994
 msgid "Tried to end inactive copy"
@@ -388,7 +388,7 @@ msgstr "PGStream已经被关闭。"
 #, java-format
 msgid "Received CommandComplete ''{0}'' without an active copy operation"
 msgstr ""
-"在没有活动拷贝流的情况下收到了CommandComplete ''{0}''"
+"在没有活动中的拷贝流的情况下收到了CommandComplete消息''{0}''"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1212
 #, java-format
@@ -412,19 +412,19 @@ msgstr "在没有活动拷贝流的情况下收到了CopyData"
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1263
 #, java-format
 msgid "Unexpected copydata from server for {0}"
-msgstr "从服务端接收到用于{0}的期待外的CopyData"
+msgstr "从服务端接收到用于{0}的预期之外的CopyData"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1323
 #, java-format
 msgid "Unexpected packet type during copy: {0}"
-msgstr "拷贝时收到期待外的数据包类型: {0}"
+msgstr "拷贝时收到预期之外的数据包类型: {0}"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:1619
 #, java-format
 msgid ""
 "Bind message length {0} too long.  This can be caused by very large or "
 "incorrect length specifications on InputStream parameters."
-msgstr "绑定消息长度{0}过长。这可能是由于InputStream的参数定义过大或定义不正确导致"
+msgstr "绑定消息的长度({0})过长。这可能是由于InputStream的参数定义过大或定义不正确导致"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:2240
 msgid "Ran out of memory retrieving query results."
@@ -441,7 +441,7 @@ msgid ""
 "requires client_encoding to be UTF8 for correct operation."
 msgstr ""
 "服务端的client_encoding参数被修改为{0}。JDBC驱动需要"
-"将client_encoding设置为UTF8才能正确工作。"
+"将client_encoding设置为UTF8才能正常动作。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:2705
 #, java-format
@@ -449,8 +449,8 @@ msgid ""
 "The server''s DateStyle parameter was changed to {0}. The JDBC driver "
 "requires DateStyle to begin with ISO for correct operation."
 msgstr ""
-"这服务器的 DateStyle 参数被更改成 {0}，JDBC 驱动程序请求需要 DateStyle 以 "
-"ISO 开头以正确工作。"
+"服务器的DateStyle参数被修改为了{0}。"
+"JDBC驱动程序需要以ISO开头的DateStyle才能正常动作。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:2718
 #, java-format
@@ -458,18 +458,18 @@ msgid ""
 "The server''s standard_conforming_strings parameter was reported as {0}. The "
 "JDBC driver expected on or off."
 msgstr ""
-"这服务器的 standard_conforming_strings 参数已回报为 {0}，JDBC 驱动程序已预期"
-"开启或是关闭。"
+"服务器的standard_conforming_strings参数被修改为了{0}。"
+"JDBC驱动程序需要将其设置为on或off才能正常动作。"
 
 #: src/main/java/org/postgresql/core/v3/SimpleParameterList.java:270
 #, java-format
 msgid "No value specified for parameter {0}."
-msgstr "未设定参数值 {0} 的内容。"
+msgstr "未设置参数{0}的值。"
 
 #: src/main/java/org/postgresql/core/v3/SimpleParameterList.java:462
 #, fuzzy, java-format
 msgid "Added parameters index out of range: {0}, number of columns: {1}."
-msgstr "添加的参数索引超出范围: {0}，参数总数: {1}。"
+msgstr "添加的参数数量超出范围: {0}，参数总数: {1}。"
 
 #: src/main/java/org/postgresql/core/v3/replication/V3PGReplicationStream.java:147
 #, java-format
@@ -483,31 +483,31 @@ msgstr "该复制流已经被关闭。"
 
 #: src/main/java/org/postgresql/ds/PGPooledConnection.java:118
 msgid "This PooledConnection has already been closed."
-msgstr "这个 PooledConnection 已经被关闭。"
+msgstr "该PooledConnection已经被关闭。"
 
 #: src/main/java/org/postgresql/ds/PGPooledConnection.java:314
 msgid ""
 "Connection has been closed automatically because a new connection was opened "
 "for the same PooledConnection or the PooledConnection has been closed."
 msgstr ""
-"Connection 已自动结束，因为一个新的  PooledConnection 连线被开启或者或 "
-"PooledConnection 已被关闭。"
+"连接已经被自动关闭，由于为相同的PooledConnection开启新连接或者"
+"PooledConnection已经被关闭。"
 
 #: src/main/java/org/postgresql/ds/PGPooledConnection.java:315
 msgid "Connection has been closed."
-msgstr "Connection 已经被关闭。"
+msgstr "Connection已经被关闭。"
 
 #: src/main/java/org/postgresql/ds/PGPooledConnection.java:420
 msgid "Statement has been closed."
-msgstr "Sstatement 已经被关闭。"
+msgstr "Sstatement已经被关闭。"
 
 #: src/main/java/org/postgresql/ds/PGPoolingDataSource.java:269
 msgid "Failed to setup DataSource."
-msgstr "DataSource配置失败"
+msgstr "DataSource配置失败。"
 
 #: src/main/java/org/postgresql/ds/PGPoolingDataSource.java:371
 msgid "DataSource has been closed."
-msgstr "DataSource 已经被关闭。"
+msgstr "DataSource已经被关闭。"
 
 #: src/main/java/org/postgresql/ds/common/BaseDataSource.java:1270
 #: src/main/java/org/postgresql/ds/common/BaseDataSource.java:1280
@@ -531,7 +531,7 @@ msgid ""
 "Fastpath call {0} - No result was returned or wrong size while expecting an "
 "integer."
 msgstr "Fastpath调用{0} - 期待返回integer值，但实际没有返回任何结果"
-"或返回了错误的大小的值。"
+"或返回了错误长度的结果。"
 
 #: src/main/java/org/postgresql/fastpath/Fastpath.java:186
 #, fuzzy, java-format
@@ -544,12 +544,12 @@ msgid ""
 "Fastpath call {0} - No result was returned or wrong size while expecting a "
 "long."
 msgstr "Fastpath调用{0} - 期待返回long值，但实际没有返回任何结果"
-"或返回了错误的大小的值。"
+"或返回了错误长度的结果。"
 
 #: src/main/java/org/postgresql/fastpath/Fastpath.java:297
 #, java-format
 msgid "The fastpath function {0} is unknown."
-msgstr "不明的 fastpath 函式 {0}。"
+msgstr "未知的fastpath函数{0}。"
 
 #: src/main/java/org/postgresql/geometric/PGbox.java:77
 #: src/main/java/org/postgresql/geometric/PGcircle.java:74
@@ -560,12 +560,12 @@ msgstr "不明的 fastpath 函式 {0}。"
 #: src/main/java/org/postgresql/geometric/PGpoint.java:76
 #, java-format
 msgid "Conversion to type {0} failed: {1}."
-msgstr "转换类型 {0} 失败：{1}。"
+msgstr "将{1}转换为{0}类型失败。"
 
 #: src/main/java/org/postgresql/geometric/PGpath.java:70
 #, java-format
 msgid "Cannot tell if path is open or closed: {0}."
-msgstr "无法得知 path 是开启或关闭：{0}。"
+msgstr "无法得知path是否开启: {0}。"
 
 #: src/main/java/org/postgresql/gss/GssAction.java:136
 #: src/main/java/org/postgresql/gss/MakeGSS.java:65
@@ -576,7 +576,7 @@ msgstr "GSS认证失败"
 #: src/main/java/org/postgresql/jdbc/AbstractBlobClob.java:77
 msgid ""
 "Truncation of large objects is only implemented in 8.3 and later servers."
-msgstr "大型对象的截断(Truncation)仅被实作执行在 8.3 和后来的服务器。"
+msgstr "大对象的截断(Truncation)只适用于8.3及之后的Postgres."
 
 #: src/main/java/org/postgresql/jdbc/AbstractBlobClob.java:82
 msgid "Cannot truncate LOB to a negative length."
@@ -586,7 +586,7 @@ msgstr "无法将LOB的长度设置为负值。"
 #: src/main/java/org/postgresql/jdbc/AbstractBlobClob.java:231
 #, java-format
 msgid "PostgreSQL LOBs can only index to: {0}"
-msgstr "PostgreSQL LOBs 仅能索引到：{0}"
+msgstr "PostgreSQL的LOBs仅能索引到：{0}"
 
 #: src/main/java/org/postgresql/jdbc/AbstractBlobClob.java:227
 msgid "LOB positioning offsets start at 1."
@@ -618,7 +618,7 @@ msgstr "无法强制转换为boolean: \"{0}\""
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions2.java:168
 #, java-format
 msgid "{0} function takes four and only four argument."
-msgstr "{0} 函式取得四个且仅有四个引数。"
+msgstr "{0}函数需要为其提供4个参数。"
 
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:268
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:335
@@ -628,7 +628,7 @@ msgstr "{0} 函式取得四个且仅有四个引数。"
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions2.java:665
 #, java-format
 msgid "{0} function takes two and only two arguments."
-msgstr "{0} 函式取得二个且仅有二个引数。"
+msgstr "{0}函数需要为其提供2个参数。"
 
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:286
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:439
@@ -642,7 +642,7 @@ msgstr "{0} 函式取得二个且仅有二个引数。"
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions2.java:654
 #, java-format
 msgid "{0} function takes one and only one argument."
-msgstr "{0} 函式取得一个且仅有一个引数。"
+msgstr "{0}函数需要为其提供1个参数。"
 
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:310
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:384
@@ -650,7 +650,7 @@ msgstr "{0} 函式取得一个且仅有一个引数。"
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions2.java:308
 #, java-format
 msgid "{0} function takes two or three arguments."
-msgstr "{0} 函式取得二个或三个引数。"
+msgstr "{0}函数需要为其提供2或3个参数。"
 
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:409
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:424
@@ -659,7 +659,7 @@ msgstr "{0} 函式取得二个或三个引数。"
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions2.java:645
 #, java-format
 msgid "{0} function doesn''t take any argument."
-msgstr "{0} 函式无法取得任何的引数。"
+msgstr "{0}函数不需要为其提供任何参数。"
 
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:584
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:636
@@ -667,7 +667,7 @@ msgstr "{0} 函式无法取得任何的引数。"
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions2.java:571
 #, java-format
 msgid "{0} function takes three and only three arguments."
-msgstr "{0} 函式取得三个且仅有三个引数。"
+msgstr "{0}函数需要为其提供3个参数。"
 
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:597
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions.java:618
@@ -681,33 +681,33 @@ msgstr "{0} 函式取得三个且仅有三个引数。"
 #: src/main/java/org/postgresql/jdbc/EscapedFunctions2.java:597
 #, java-format
 msgid "Interval {0} not yet implemented"
-msgstr "隔绝 {0} 尚未被实作。"
+msgstr "Interval {0}尚未实现。"
 
 #: src/main/java/org/postgresql/jdbc/PSQLSavepoint.java:38
 #: src/main/java/org/postgresql/jdbc/PSQLSavepoint.java:53
 #: src/main/java/org/postgresql/jdbc/PSQLSavepoint.java:71
 msgid "Cannot reference a savepoint after it has been released."
-msgstr "无法参照已经被释放的储存点。"
+msgstr "无法参照已经被释放的保存点。"
 
 #: src/main/java/org/postgresql/jdbc/PSQLSavepoint.java:43
 msgid "Cannot retrieve the id of a named savepoint."
-msgstr "无法取得已命名储存点的 id。"
+msgstr "无法取得已命名保存点的id。"
 
 #: src/main/java/org/postgresql/jdbc/PSQLSavepoint.java:58
 msgid "Cannot retrieve the name of an unnamed savepoint."
-msgstr "无法取得未命名储存点(Savepoint)的名称。"
+msgstr "无法取得未命名保存点的名称。"
 
 #: src/main/java/org/postgresql/jdbc/PgArray.java:156
 #: src/main/java/org/postgresql/jdbc/PgArray.java:847
 #, java-format
 msgid "The array index is out of range: {0}"
-msgstr "阵列索引超过许可范围：{0}"
+msgstr "数组的下标超出范围: {0}"
 
 #: src/main/java/org/postgresql/jdbc/PgArray.java:177
 #: src/main/java/org/postgresql/jdbc/PgArray.java:864
 #, java-format
 msgid "The array index is out of range: {0}, number of elements: {1}."
-msgstr "阵列索引超过许可范围：{0}，元素数量：{1}。"
+msgstr "数组的下标超出范围: {0}，元素数量：{1}。"
 
 #: src/main/java/org/postgresql/jdbc/PgArray.java:209
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1908
@@ -719,13 +719,13 @@ msgid ""
 "was created in.  The most common example of this is storing 8bit data in a "
 "SQL_ASCII database."
 msgstr ""
-"发现不合法的字元，可能的原因是欲储存的数据中包含数据库的字元集不支援的字码，"
-"其中最常见例子的就是将 8 位元数据存入使用 SQL_ASCII 编码的数据库中。"
+"发现不合法的字符。可能是由于存储的数据中包含数据库不支持的字符集。"
+"最常见的例子就是将8位数据存储到了SQL_ASCII编码的数据库中。"
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:85
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:95
 msgid "A CallableStatement was executed with nothing returned."
-msgstr "一个 CallableStatement 执行函式后没有传回值。"
+msgstr "CallableStatement执行后没有收到任何返回值。"
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:106
 #, fuzzy
@@ -738,14 +738,13 @@ msgid ""
 "A CallableStatement function was executed and the out parameter {0} was of "
 "type {1} however type {2} was registered."
 msgstr ""
-"一个 CallableStatement 执行函式后输出的参数类型为 {1} 值为 {0}，但是已注册的"
-"类型是 {2}。"
+"CallableStatement函数执行后出参{0}的类型是{1}，但已注册的类型是{2}。"
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:206
 msgid ""
 "This statement does not declare an OUT parameter.  Use '{' ?= call ... '}' "
 "to declare one."
-msgstr "这个 statement 未宣告 OUT 参数，使用 '{' ?= call ... '}' 宣告一个。"
+msgstr "该statement没有声明OUT参数，请使用'{' ?= call ... '}'进行声明。"
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:229
 msgid "wasNull cannot be call before fetching a result."
@@ -757,19 +756,19 @@ msgstr "wasNull无法在结果取得前被调用。"
 msgid ""
 "Parameter of type {0} was registered, but call to get{1} (sqltype={2}) was "
 "made."
-msgstr "已注册参数类型 {0}，但是又呼叫了get{1}(sqltype={2})。"
+msgstr "注册的是{0}类型参数，却调用get{1}(sqltype={2})获取结果。"
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:407
 msgid ""
 "A CallableStatement was declared, but no call to registerOutParameter(1, "
 "<some type>) was made."
 msgstr ""
-"已经宣告 CallableStatement 函式，但是尚未呼叫 registerOutParameter (1, "
-"<some_type>) 。"
+"已声明CallableStatement，却没有调用registerOutParameter(1, "
+"<some_type>)注册输出参数类型。"
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:413
 msgid "No function outputs were registered."
-msgstr "未注册函数的输出。"
+msgstr "未注册函数的输出参数类型。"
 
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:419
 msgid ""
@@ -779,12 +778,12 @@ msgstr "在CallableStatement执行之前无法获取结果"
 #: src/main/java/org/postgresql/jdbc/PgCallableStatement.java:686
 #, fuzzy, java-format
 msgid "Unsupported type conversion to {1}."
-msgstr "未被支持的类型值：{0}"
+msgstr "不支持的类型转换: {1}"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:262
 #, java-format
 msgid "Unsupported value for stringtype parameter: {0}"
-msgstr "字符类型参数值未被支持：{0}"
+msgstr "不支持的stringtype属性值: {0}"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:463
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:104
@@ -798,13 +797,13 @@ msgstr "字符类型参数值未被支持：{0}"
 #: src/main/java/org/postgresql/jdbc/TypeInfoCache.java:563
 #: src/main/java/org/postgresql/jdbc/TypeInfoCache.java:568
 msgid "No results were returned by the query."
-msgstr "查询没有传回任何结果。"
+msgstr "查询没有返回任何结果。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:481
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:499
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:258
 msgid "A result was returned when none was expected."
-msgstr "传回预期之外的结果。"
+msgstr "返回预期之外的结果。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:604
 msgid "Custom type maps are not supported."
@@ -813,7 +812,7 @@ msgstr "不支持自定义的Map类型"
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:646
 #, java-format
 msgid "Failed to create object for: {0}."
-msgstr "为 {0} 建立对象失败。"
+msgstr "无法创建{0}类型对象。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:700
 #, java-format
@@ -823,7 +822,7 @@ msgstr "无法为数据类型{1}加载类{0}"
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:761
 msgid ""
 "Cannot change transaction read-only property in the middle of a transaction."
-msgstr "不能在事物交易过程中改变事物交易唯读属性。"
+msgstr "无法在事务处理过程中变更事务的只读属性。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:846
 msgid "Cannot commit when autoCommit is enabled."
@@ -843,12 +842,12 @@ msgstr "无法在autoCommit有效时显式的回滚事务。"
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:920
 msgid ""
 "Cannot change transaction isolation level in the middle of a transaction."
-msgstr "不能在事务交易过程中改变事物交易隔绝等级。"
+msgstr "无法在事务处理过程中变更事务的隔离级别。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:926
 #, java-format
 msgid "Transaction isolation level {0} not supported."
-msgstr "不支援交易隔绝等级 {0} 。"
+msgstr "不支持的事务隔离级别: {0}。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:975
 msgid "Finalizing a Connection that was never closed:"
@@ -862,7 +861,7 @@ msgstr "无法将数据转成目标编码。"
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1783
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:929
 msgid "Fetch size must be a value greater to or equal to 0."
-msgstr "数据读取笔数(fetch size)必须大于或等于 0。"
+msgstr "数据读取大小(fetch size)必须大于或等于 0。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1384
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1425
@@ -913,12 +912,12 @@ msgstr "无法获取网络超时时间。"
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1682
 #, java-format
 msgid "Unknown ResultSet holdability setting: {0}."
-msgstr "未知的 ResultSet 可适用的设置：{0}。"
+msgstr "未知的结果集holdability设置: {0}。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1700
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1721
 msgid "Cannot establish a savepoint in auto-commit mode."
-msgstr "在自动确认事物交易模式无法建立储存点(Savepoint)。"
+msgstr "无法在自动提交模式下建立保存点。"
 
 #: src/main/java/org/postgresql/jdbc/PgConnection.java:1790
 msgid "Returning autogenerated keys is not supported."
