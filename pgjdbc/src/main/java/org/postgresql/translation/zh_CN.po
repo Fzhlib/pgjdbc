@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PostgreSQL JDBC Driver 8.3\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2008-01-31 14:34+0800\n"
-"Last-Translator: Feng,zhihao <fzhlib@gmail.com>\n"
+"Last-Translator: Feng,zhihao <fengzh.fnst@fujitsu.com>\n"
 "Language-Team: The PostgreSQL Development Team\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr "读取driverconfig.properties中的默认设置时发生错误"
 
 #: src/main/java/org/postgresql/Driver.java:233
 msgid "Properties for the driver contains a non-string value for the key "
-msgstr "驱动的Propertie属性中存在非字符串的键值"
+msgstr "驱动程序的Propertie属性中存在非字符串的键值"
 
 #: src/main/java/org/postgresql/Driver.java:276
 msgid ""
@@ -242,7 +242,7 @@ msgid ""
 "SCRAM authentication is not supported by this driver. You need JDK >= 8 and "
 "pgjdbc >= 42.2.0 (not \".jre\" versions)"
 msgstr ""
-"驱动不支持SCRAM认证。需要JDK >= 8 并且 pgjdbc >= 42.2.0(不是\".jre\"的版本)"
+"驱动程序不支持SCRAM认证。需要JDK >= 8 并且 pgjdbc >= 42.2.0(不是\".jre\"的版本)"
 
 #: src/main/java/org/postgresql/core/v3/ConnectionFactoryImpl.java:706
 #, java-format
@@ -440,7 +440,7 @@ msgid ""
 "The server''s client_encoding parameter was changed to {0}. The JDBC driver "
 "requires client_encoding to be UTF8 for correct operation."
 msgstr ""
-"服务端的client_encoding参数被修改为{0}。JDBC驱动需要"
+"服务端的client_encoding参数被修改为{0}。JDBC驱动程序需要"
 "将client_encoding设置为UTF8才能正常动作。"
 
 #: src/main/java/org/postgresql/core/v3/QueryExecutorImpl.java:2705
@@ -469,7 +469,7 @@ msgstr "未设置参数{0}的值。"
 #: src/main/java/org/postgresql/core/v3/SimpleParameterList.java:462
 #, fuzzy, java-format
 msgid "Added parameters index out of range: {0}, number of columns: {1}."
-msgstr "添加的参数数量超出范围: {0}，参数总数: {1}。"
+msgstr "新增的参数索引超出范围: {0}，参数总数: {1}。"
 
 #: src/main/java/org/postgresql/core/v3/replication/V3PGReplicationStream.java:147
 #, java-format
@@ -701,13 +701,13 @@ msgstr "无法取得未命名保存点的名称。"
 #: src/main/java/org/postgresql/jdbc/PgArray.java:847
 #, java-format
 msgid "The array index is out of range: {0}"
-msgstr "数组的下标超出范围: {0}"
+msgstr "数组的索引超出范围: {0}"
 
 #: src/main/java/org/postgresql/jdbc/PgArray.java:177
 #: src/main/java/org/postgresql/jdbc/PgArray.java:864
 #, java-format
 msgid "The array index is out of range: {0}, number of elements: {1}."
-msgstr "数组的下标超出范围: {0}，元素数量：{1}。"
+msgstr "数组的索引超出范围: {0}，元素数量：{1}。"
 
 #: src/main/java/org/postgresql/jdbc/PgArray.java:209
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1908
@@ -931,7 +931,7 @@ msgstr "无法在缺少系统目录数据的情况下确定MaxIndexKeys的值"
 
 #: src/main/java/org/postgresql/jdbc/PgDatabaseMetaData.java:88
 msgid "Unable to find name datatype in the system catalogs."
-msgstr "在系统 catalog 中找不到名称数据类型(datatype)。"
+msgstr "无法在系统目录中找到name数据类型。"
 
 #: src/main/java/org/postgresql/jdbc/PgDatabaseMetaData.java:327
 #, fuzzy
@@ -985,7 +985,7 @@ msgstr ""
 #: src/main/java/org/postgresql/jdbc/PgParameterMetaData.java:88
 #, java-format
 msgid "The parameter index is out of range: {0}, number of parameters: {1}."
-msgstr "参数索引超出许可范围：{0}，参数总数：{1}。"
+msgstr "参数索引超出范围: {0}，参数总数: {1}。"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:90
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:113
@@ -993,11 +993,11 @@ msgstr "参数索引超出许可范围：{0}，参数总数：{1}。"
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:1033
 msgid ""
 "Can''t use query methods that take a query string on a PreparedStatement."
-msgstr "在 PreparedStatement 上不能使用获取查询字符的查询方法。"
+msgstr "不能在PreparedStatement上使用带有查询字符串的query方法。"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:254
 msgid "Unknown Types value."
-msgstr "不明的类型值。"
+msgstr "未知的类型值。"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:385
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:442
@@ -1005,24 +1005,24 @@ msgstr "不明的类型值。"
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:1497
 #, java-format
 msgid "Invalid stream length {0}."
-msgstr "无效的串流长度 {0}."
+msgstr "无效的字符流长度: {0}."
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:414
 #, java-format
 msgid "The JVM claims not to support the {0} encoding."
-msgstr "JVM 声明并不支援 {0} 编码。"
+msgstr "JVM不支持{0}编码。"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:417
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1124
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1156
 msgid "Provided InputStream failed."
-msgstr "提供的 InputStream 已失败。"
+msgstr "提供的InputStream发生错误。"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:463
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:1095
 #, java-format
 msgid "Unknown type {0}."
-msgstr "不明的类型 {0}"
+msgstr "未知的类型: {0}"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:480
 msgid "No hstore extension installed."
@@ -1034,17 +1034,17 @@ msgstr "hstore扩展尚未安装。"
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:667
 #, java-format
 msgid "Cannot cast an instance of {0} to type {1}"
-msgstr "不能转换一个 {0} 实例到类型 {1}"
+msgstr "无法将一个{0}实例强制转换为{1}类型"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:685
 #, java-format
 msgid "Unsupported Types value: {0}"
-msgstr "未被支持的类型值：{0}"
+msgstr "不支持的类型值: {0}"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:897
 #, java-format
 msgid "Cannot convert an instance of {0} to type {1}"
-msgstr "无法转换 {0} 到类型 {1} 的实例"
+msgstr "无法将一个{0}实例转换为{1}类型"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:973
 #, java-format
@@ -1057,12 +1057,12 @@ msgstr "无法推测实例{0}的SQL类型。使用setObject()时请明确指定"
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:1132
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:1233
 msgid "Unexpected error writing large object to database."
-msgstr "将大型对象(large object)写入数据库时发生不明错误。"
+msgstr "将大对象写入数据库时预期之外的错误。"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:1177
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1206
 msgid "Provided Reader failed."
-msgstr "提供的 Reader 已失败。"
+msgstr "提供的Reader发生错误。"
 
 #: src/main/java/org/postgresql/jdbc/PgPreparedStatement.java:1456
 #: src/main/java/org/postgresql/util/StreamWrapper.java:56
@@ -1073,7 +1073,7 @@ msgstr "发送对象过大，无法通过协议发送。"
 msgid ""
 "Operation requires a scrollable ResultSet, but this ResultSet is "
 "FORWARD_ONLY."
-msgstr "操作要求可卷动的 ResultSet，但此 ResultSet 是 FORWARD_ONLY。"
+msgstr "该操作需要可滚动的结果集，但该结果集被设置为了FORWARD_ONLY。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:479
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:518
@@ -1085,47 +1085,47 @@ msgstr "操作要求可卷动的 ResultSet，但此 ResultSet 是 FORWARD_ONLY�
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:3065
 #, fuzzy, java-format
 msgid "Cannot convert the column of type {0} to requested type {1}."
-msgstr "无法将类型{0}的列转换为类型{1}。"
+msgstr "无法将类型{0}的列转换为{1}类型。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:851
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:872
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1799
 msgid "Can''t use relative move methods while on the insert row."
-msgstr "不能在新增的数据列上使用相对位置 move 方法。"
+msgstr "无法在插入行上使用相对位置移动方法。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:895
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:921
 #, java-format
 msgid "Invalid fetch direction constant: {0}."
-msgstr "无效的 fetch 方向常数：{0}。"
+msgstr "无效的FetchDirection常量: {0}。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:905
 msgid "Cannot call cancelRowUpdates() when on the insert row."
-msgstr "不能在新增的数据列上呼叫 cancelRowUpdates()。"
+msgstr "无法在插入行上调用cancelRowUpdates()。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:920
 msgid "Cannot call deleteRow() when on the insert row."
-msgstr "不能在新增的数据上呼叫 deleteRow()。"
+msgstr "无法在插入行上调用deleteRow()。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:927
 msgid ""
 "Currently positioned before the start of the ResultSet.  You cannot call "
 "deleteRow() here."
-msgstr "不能在 ResultSet 的第一笔数据之前呼叫 deleteRow()。"
+msgstr "当前游标位于结果集的第一条结果之前，无法在此处调用deleteRow()。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:933
 msgid ""
 "Currently positioned after the end of the ResultSet.  You cannot call "
 "deleteRow() here."
-msgstr "不能在 ResultSet 的最后一笔数据之后呼叫 deleteRow()。"
+msgstr "当前游标位于结果集的最后一条结果之后，无法在此处调用deleteRow()。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:937
 msgid "There are no rows in this ResultSet."
-msgstr "ResultSet 中找不到数据列。"
+msgstr "该结果集中没有任何数据行。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:974
 msgid "Not on the insert row."
-msgstr "不在新增的数据列上。"
+msgstr "游标没有位于插入行上。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:976
 msgid "You must specify at least one column value to insert a row."
@@ -1137,31 +1137,32 @@ msgstr "必须为行插入操作指定至少一列数据。"
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:2439
 #, java-format
 msgid "The JVM claims not to support the encoding: {0}"
-msgstr "JVM 声明并不支援编码：{0} 。"
+msgstr "JVM不支持编码: {0}"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1248
 msgid "Can''t refresh the insert row."
-msgstr "无法重读新增的数据列。"
+msgstr "无法刷新插入行。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1313
 msgid "Cannot call updateRow() when on the insert row."
-msgstr "不能在新增的数据列上呼叫 deleteRow()。"
+msgstr "无法在插入行上调用updateRow()。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1320
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:3082
 msgid ""
 "Cannot update the ResultSet because it is either before the start or after "
 "the end of the results."
-msgstr "无法更新 ResultSet，可能在第一笔数据之前或最未笔数据之后。"
+msgstr "无法更新结果集，可能由于游标正位于结果集第一条结果之前"
+"或最后一条结果之后。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1496
 msgid "ResultSets with concurrency CONCUR_READ_ONLY cannot be updated."
-msgstr "ResultSets 与并发同作(Concurrency) CONCUR_READ_ONLY 不能被更新。"
+msgstr "设置了CONCUR_READ_ONLY并发属性的结果集无法被更新。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1564
 #, java-format
 msgid "No primary key found for table {0}."
-msgstr "{0} 数据表中未找到主键(Primary key)。"
+msgstr "{0}表中找不到主键。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:1995
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:2000
@@ -1178,12 +1179,12 @@ msgstr "{0} 数据表中未找到主键(Primary key)。"
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:3070
 #, java-format
 msgid "Bad value for type {0} : {1}"
-msgstr "不良的类型值 {0} : {1}"
+msgstr "不当的类型值{0} : {1}"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:2592
 #, java-format
 msgid "The column name {0} was not found in this ResultSet."
-msgstr "ResultSet 中找不到栏位名称 {0}。"
+msgstr "结果集中找不到列名{0}。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:2728
 msgid ""
@@ -1191,16 +1192,16 @@ msgid ""
 "select only one table, and must select all primary keys from that table. See "
 "the JDBC 2.1 API Specification, section 5.6 for more details."
 msgstr ""
-"不可更新的 ResultSet。用来产生这个 ResultSet 的 SQL 命令只能操作一个数据表，"
-"并且必需选择所有主键栏位，详细请参阅 JDBC 2.1 API 规格书 5.6 节。"
+"不可更新的结果集。生成该结果集的查询语句只能操作单个表，而且必须选择所有的主键。"
+"请参考JDBC 2.1 API手册的5.6节查看详细描述。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:2740
 msgid "This ResultSet is closed."
-msgstr "这个 ResultSet 已经被关闭。"
+msgstr "该结果集已经被关闭。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:2771
 msgid "ResultSet not positioned properly, perhaps you need to call next."
-msgstr "查询结果指标位置不正确，您也许需要呼叫 ResultSet 的 next() 方法。"
+msgstr "结果集中游标的位置不正确，您可能需要调用next()方法。"
 
 #: src/main/java/org/postgresql/jdbc/PgResultSet.java:3102
 #, fuzzy
@@ -1290,7 +1291,7 @@ msgstr "该SQLXML对象已经被初始化，无法再次执行初始化操作。
 
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:237
 msgid "Multiple ResultSets were returned by the query."
-msgstr "查询传回多个 ResultSet。"
+msgstr "查询返回了多个结果集。"
 
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:319
 msgid "Can''t use executeWithFlags(int) on a Statement."
@@ -1298,19 +1299,19 @@ msgstr "无法在Statement对象上使用executeWithFlags(int)函数"
 
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:518
 msgid "Maximum number of rows must be a value grater than or equal to 0."
-msgstr "最大数据读取笔数必须大于或等于 0。"
+msgstr "最大行数的值必须大于或等于0"
 
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:564
 msgid "Query timeout must be a value greater than or equals to 0."
-msgstr "查询逾时等候时间必须大于或等于 0。"
+msgstr "查询超时时间的值必须大于或等于0。"
 
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:606
 msgid "The maximum field size must be a value greater than or equal to 0."
-msgstr "最大栏位容量必须大于或等于 0。"
+msgstr "最大字段大小的值必须大于或等于0。"
 
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:709
 msgid "This statement has been closed."
-msgstr "这个 statement 已经被关闭。"
+msgstr "该statement已经被关闭。"
 
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:1078
 #: src/main/java/org/postgresql/jdbc/PgStatement.java:1208
@@ -1371,12 +1372,12 @@ msgstr "无效的服务器SCRAM签名"
 #: src/main/java/org/postgresql/largeobject/LargeObjectManager.java:249
 #: src/main/java/org/postgresql/largeobject/LargeObjectManager.java:290
 msgid "Large Objects may not be used in auto-commit mode."
-msgstr "大型对象无法被使用在自动确认事物交易模式。"
+msgstr "无法在自动提交模式下使用大对象。"
 
 #: src/main/java/org/postgresql/osgi/PGDataSourceFactory.java:82
 #, fuzzy, java-format
 msgid "Unsupported properties: {0}"
-msgstr "未被支持的propertie属性：{0}"
+msgstr "未被支持的propertie属性: {0}"
 
 #: src/main/java/org/postgresql/replication/fluent/AbstractCreateSlotBuilder.java:38
 msgid "Server does not support temporary replication slots"
@@ -1434,7 +1435,7 @@ msgstr "控制台不可用，无法为SSL密钥文件读取密码。"
 #: src/main/java/org/postgresql/ssl/PKCS12KeyManager.java:160
 #, java-format
 msgid "Could not read password for SSL key file by callbackhandler {0}."
-msgstr "无法通过callbackhandler {0}为SSL密钥文件读取密码"
+msgstr "无法通过callbackhandler {0}为SSL密钥文件读取密码。"
 
 #: src/main/java/org/postgresql/ssl/LazyKeyManager.java:243
 #, java-format
@@ -1585,7 +1586,7 @@ msgstr "找不到X509TrustManager"
 
 #: src/main/java/org/postgresql/util/PGInterval.java:210
 msgid "Conversion of interval failed"
-msgstr "隔绝(Interval)转换失败。"
+msgstr "Interval转换失败。"
 
 #: src/main/java/org/postgresql/util/PGPropertyMaxResultBufferParser.java:204
 #, java-format
@@ -1597,7 +1598,7 @@ msgstr "警告！需要分配{0}字节，但这超出了最大可分配的堆内
 
 #: src/main/java/org/postgresql/util/PGmoney.java:61
 msgid "Conversion of money failed."
-msgstr "money 转换失败。"
+msgstr "money转换失败。"
 
 #: src/main/java/org/postgresql/util/ServerErrorMessage.java:43
 #, java-format
@@ -1611,42 +1612,42 @@ msgstr "(pgjdbc: 自动检出服务端编码为{0}，如果消息不可读，"
 #: src/main/java/org/postgresql/util/ServerErrorMessage.java:187
 #, java-format
 msgid "Detail: {0}"
-msgstr "详细：{0}"
+msgstr "详细: {0}"
 
 #: src/main/java/org/postgresql/util/ServerErrorMessage.java:192
 #, java-format
 msgid "Hint: {0}"
-msgstr "建议：{0}"
+msgstr "建议: {0}"
 
 #: src/main/java/org/postgresql/util/ServerErrorMessage.java:196
 #, java-format
 msgid "Position: {0}"
-msgstr "位置：{0}"
+msgstr "位置: {0}"
 
 #: src/main/java/org/postgresql/util/ServerErrorMessage.java:200
 #, java-format
 msgid "Where: {0}"
-msgstr "在位置：{0}"
+msgstr "在位置: {0}"
 
 #: src/main/java/org/postgresql/util/ServerErrorMessage.java:206
 #, java-format
 msgid "Internal Query: {0}"
-msgstr "内部查询：{0}"
+msgstr "内部查询: {0}"
 
 #: src/main/java/org/postgresql/util/ServerErrorMessage.java:210
 #, java-format
 msgid "Internal Position: {0}"
-msgstr "内部位置：{0}"
+msgstr "内部位置: {0}"
 
 #: src/main/java/org/postgresql/util/ServerErrorMessage.java:217
 #, java-format
 msgid "Location: File: {0}, Routine: {1}, Line: {2}"
-msgstr "位置：文件：{0}，常式：{1}，行：{2}"
+msgstr "位置: 文件: {0}，例程: {1}，行: {2}"
 
 #: src/main/java/org/postgresql/util/ServerErrorMessage.java:222
 #, java-format
 msgid "Server SQLState: {0}"
-msgstr "服务器 SQLState：{0}"
+msgstr "服务器SQLState: {0}"
 
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:128
 msgid ""
@@ -1660,7 +1661,7 @@ msgstr "事务控制方法setAutoCommit(true), commit, rollback"
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:381
 #, java-format
 msgid "Invalid flags {0}"
-msgstr "无效的旗标 flags {0}"
+msgstr "无效的标志: {0}"
 
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:190
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:276
@@ -1675,7 +1676,7 @@ msgstr "连接正在被其他事务占用"
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:203
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:286
 msgid "suspend/resume not implemented"
-msgstr "暂停(suspend)/再继续(resume)尚未被实作。"
+msgstr "suspend/resume尚未实现。"
 
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:211
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:218
@@ -1685,8 +1686,8 @@ msgid ""
 "Invalid protocol state requested. Attempted transaction interleaving is not "
 "supported. xid={0}, currentXid={1}, state={2}, flags={3}"
 msgstr ""
-"事物交易隔绝(Transaction interleaving)未被实作。xid={0}, currentXid={1}, "
-"state={2}, flags={3}"
+"请求的协议状态无效。不支持尝试事务交错。"
+"xid={0}, 当前事务的Xid={1}，状态={2}，标志位={3}"
 
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:233
 msgid "Error disabling autocommit"
@@ -1722,7 +1723,7 @@ msgstr "未实装: Prepare必须以开始该事务的相同连接执行. "
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:340
 #, java-format
 msgid "Prepare called before end. prepare xid={0}, state={1}"
-msgstr "end在prepare之前被调用。准备事务的xid={0}, state={1}"
+msgstr "end在prepare之前被调用。准备事务的xid={0}, 状态={1}"
 
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:360
 #, java-format
@@ -1762,7 +1763,7 @@ msgstr "未知xid的一阶段提交。提交事务的xid={0}, 当前事务的Xid
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:537
 #, java-format
 msgid "commit called before end. commit xid={0}, state={1}"
-msgstr "end在commit之前被调用。提交事务的xid={0}, state={1}"
+msgstr "end在commit之前被调用。提交事务的xid={0}, 状态={1}"
 
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:548
 #, java-format
@@ -1775,7 +1776,7 @@ msgid ""
 "Not implemented: 2nd phase commit must be issued using an idle connection. "
 "commit xid={0}, currentXid={1}, state={2}, transactionState={3}"
 msgstr "未实装: 二阶段提交必须使用空闲连接。"
-"提交事务的xid={0},当前事务的Xid={1}, state={2}, 事务State={3}"
+"提交事务的xid={0},当前事务的Xid={1}, 状态={2}, 事务状态={3}"
 
 #: src/main/java/org/postgresql/xa/PGXAConnection.java:609
 #, java-format
@@ -1791,4 +1792,4 @@ msgid "Heuristic commit/rollback not supported. forget xid={0}"
 msgstr "不支持启发式提交/回滚. forget xid={0}"
 
 #~ msgid "The driver currently does not support COPY operations."
-#~ msgstr "驱动程序目前不支援 COPY 操作。"
+#~ msgstr "驱动程序暂不支持COPY操作。"
